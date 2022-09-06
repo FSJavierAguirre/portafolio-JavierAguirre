@@ -33,6 +33,41 @@ body{
     height: 100%;
 }
 
+/* Sobre mí */
+
+#sobre-mi{
+    width: 100vw;
+    height: 1080px;
+    background-color: #270C54;
+    display: flex;
+}
+
+.avatar{
+    width: 33.3vw;
+    height: 1080px;
+}
+
+.avatar img{
+    width: 75%;
+    height: auto;
+    padding: 25px 0px 25px 25px;
+    filter: drop-shadow(8px 8px 8px #FFDE59);
+}
+
+.texto-uno{
+    width: 33.3vw;
+    height: 1080px;
+    color: #FFDE69;
+    padding: 25px 25px 25px 0px;
+}
+
+.texto-dos{
+    width: 33.3vw;
+    height: 1080px;
+    color: #FFDE69;
+    padding: 25px;
+}
+
 /* Footer */
 
 footer{
