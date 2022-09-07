@@ -1,7 +1,16 @@
 body{
     margin: 0;
     padding: 0;
+    background-color: #270C54;
 }
+
+p{font-family: 'Fresca', sans-serif;}
+h1{font-family: 'Oswald', sans-serif;}
+h2{font-family: 'Oswald', sans-serif;}
+h3{font-family: 'Oswald', sans-serif;}
+h4{font-family: 'Oswald', sans-serif;}
+h5{font-family: 'Oswald', sans-serif;}
+h6{font-family: 'Oswald', sans-serif;}
 
 .navbar{
     background-color: #270C54;
@@ -36,36 +45,74 @@ body{
 /* Sobre mí */
 
 #sobre-mi{
-    width: 100vw;
-    height: 1080px;
+    width: 100%;
+    height: auto;
     background-color: #270C54;
+}
+
+.contenido-sobreMi{
+    width: 70%;
+    height: auto;
+    margin: 0 15% 0 15%;
+    background-color: #270C54;
+}
+
+.encabezado{
     display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.titulo{
+    color: #FFDE69;
+    margin-top: 35px;
 }
 
 .avatar{
-    width: 33.3vw;
-    height: 1080px;
+    display: flex;
+    justify-content: center;
 }
 
-.avatar img{
-    width: 75%;
-    height: auto;
-    padding: 25px 0px 25px 25px;
+#avatar{
+    width: 35%;
+    height: 35%;
+    margin-top: 35px;
+    margin-bottom: 35px;
     filter: drop-shadow(8px 8px 8px #FFDE59);
 }
 
-.texto-uno{
-    width: 33.3vw;
-    height: 1080px;
-    color: #FFDE69;
-    padding: 25px 25px 25px 0px;
+.textos{
+    display: flex;
 }
 
-.texto-dos{
-    width: 33.3vw;
-    height: 1080px;
+.texto-izquierda{
     color: #FFDE69;
-    padding: 25px;
+    padding: 0px 15px 0px 15px;
+}
+
+.texto-derecha{
+    color: #FFDE69;
+    padding: 0px 15px 0px 15px;
+}
+
+.lenguajes{
+    width: 100%;
+}
+
+.lenguajes h2{
+    color: #FFDE69;
+    margin-top: 35px;
+    text-align: center;
+}
+
+.iconos{
+    display: flex;
+}
+
+.logos{
+    width: 30%;
+    height: auto;
+    margin: 35px 15px 60px 15px;
 }
 
 /* Footer */
