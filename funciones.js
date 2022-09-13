@@ -1,3 +1,5 @@
+document
+
 detalle = []
 let nombreCliente = prompt('¡Muchísimas gracias por interesarte en mi trabajo como desarrollador! \nPor favor, dime cuál es tu nombre: ')
 while(nombreCliente === ''){
@@ -234,3 +236,16 @@ let tarjetaCliente = {
 }
 
 console.log(tarjetaCliente)
+
+// Desafío DOM
+
+const boton = document.createElement('button')
+boton.innerText = 'Cotiza tu web aquí'
+console.log(boton)
+
+const divCotizador = document.getElementById('botonCotizador')
+divCotizador.append(boton)
+console.log(divCotizador)
+
+const sobreMi = document.getElementById('encabezadoSobreMi')
+sobreMi.innerText = 'Te cuento un poco quién soy...'
