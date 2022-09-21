@@ -237,8 +237,6 @@ function clickCotizador(){
     alert('Muchas gracias por cotizar conmigo ' +nombreCliente +'. Tu cotización será enviada a '+ingresoCorreo)
     alert('¡Cuídate!')
     
-    // Objetos
-    
     let tarjetaCliente = {
         nombre: nombreCliente,
         email: ingresoCorreo,
@@ -246,6 +244,11 @@ function clickCotizador(){
         valorTotal: pesosChilenos.format(valorFinal),
         detalle: detalle
     }
+
+    const tarjetaClienteIda = JSON.stringify(tarjetaCliente)
+    localStorage.setItem('tarjetaClienteIda', tarjetaClienteIda)
+    const tarjetaClienteVuelta = localStorage.getItem('tarjetaCliente')
+    const informacionVuelta = JSON.parse(tarjetaClienteVuelta) 
     
-    console.log(tarjetaCliente)
+    console.log(informacionVuelta)
 }
